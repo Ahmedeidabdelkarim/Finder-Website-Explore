@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Dosis:wght@200..800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -39,6 +41,10 @@ body {
     vertical-align: middle;
     width: 50px;
     border-radius: 30px;
+}
+
+.logoo{
+  font-family: "Lilita One", sans-serif;
 }
 
 .header .menu .head{
@@ -86,7 +92,7 @@ body {
     pointer-events: none;
     user-select: none;
     position: absolute;
-    color: hsla(0, 0%, 100%);
+    color: black;
     top: calc(50% - 4px);
 }
 
@@ -100,7 +106,7 @@ body {
     left: 0;
     width: 200px;
     padding: 15px 0;
-    background-color: hsla(229, 54%, 51%);
+    background-color: white;
     box-shadow: 0 0 5px hsla(0, 0%,0%, 0.5);
     z-index: 1;
     transform-origin: top;
@@ -182,7 +188,7 @@ body {
         right: 0;
         width: 320px;
         height: 100%;
-        background-color: hsla(229, 54%, 51%);
+        background-color: white;
         padding: 15px 30px 30px;
         overflow-y: auto;
         z-index: 1;
@@ -191,6 +197,10 @@ body {
 
     .header .menu.open{
         transform: none;
+    }
+
+    .header .menu .head .logo h4{
+      font-family: "Lilita One", sans-serif;
     }
 
     .header .menu .head{
@@ -218,7 +228,7 @@ body {
         position: absolute;
         width: 80%;
         height: 2px;
-        background-color: hsl(0,0%,100%);
+        background-color: black;
     }
 
     .header .menu .close-menu-btn::before{
@@ -233,6 +243,10 @@ body {
     }
     .header .menu > ul > li:not(:last-child){
         margin-right: 0;
+    }
+
+    .header .menu li:hover{
+      cursor: pointer;
     }
 
     .header .menu li{
@@ -387,10 +401,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
   }
-  
-  .search-btn:hover {
-    background-color: #c93030;
-  }
+
   
   .category-buttons {
     display: flex;
@@ -456,6 +467,8 @@ body {
   .row-item{
     width: 240px;
     padding: 20px;
+    white-space: nowrap;
+    font-size: 20px;
   }
 
   .row-item i{
@@ -467,10 +480,6 @@ body {
     text-align: center;
     line-height: 2.5;
     border-radius: 50%;
-  }
-
-  .row-item{
-    font-size: 20px;
   }
 
 
@@ -528,7 +537,7 @@ body {
   }
   
   .projects-header h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
   
@@ -629,15 +638,16 @@ body {
       }
 
       .sectionn-header h2,p{
-        text-align: center;
+        text-align: start;
+        padding-left: 20px;
       }
 
       .steps-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        align-items: start;
+        justify-content: start;
+        padding-left: 10px;
       }
 
       .step {
@@ -1075,7 +1085,7 @@ body {
 
 /* Common Pricing References Section */
 .pricing-references {
-  padding: 50px 25px;
+  padding: 80px 25px;
   background-color: white;
 }
 
@@ -1152,3 +1162,140 @@ body {
 .card-content button:hover {
   background-color: #3b3b3b;
 }
+
+/*********************************************/
+/* General Footer Styles */
+footer {
+  background-color: #091527;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subscribe-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subscribe-section p {
+  font-size: 18px;
+}
+
+.subscribe-btn {
+  background-color: #f5524d;
+  color: #fff;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+.contact:hover{
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #50555e;
+  margin: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand-section{
+  margin-top: 15px;
+}
+
+.brand-section p {
+  max-width: 250px;
+  margin: 25px 0;
+  color: gray;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.categories-section,
+.company-section {
+  margin-top: 20px;
+}
+
+.categories-section ul{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+
+.categories-section ul,
+.company-section ul {
+  list-style-type: none;
+  padding: 0;
+  color: rgb(169, 167, 167);
+}
+
+.categories-section li,
+.company-section li {
+  margin: 5px 0;
+}
+.cities-section h3{
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+.cities-section {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+}
+
+.city-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: 1px solid #444;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.city-buttons button:hover {
+  background-color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.footer-bottom p{
+  color: gray;
+}
+
+.footer-bottom p strong{
+  color: white;
+}
+
+.payment-icons span {
+  margin-right: 15px;
+}
+
