@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS (Optional for responsive styling) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="logo">
+                <h4 class="logoo" style="color:black; font-weight: bolder;font-size: 30px;"><i
+                        style="color: red;font-size: 30px;" class="fa-solid fa-magnifying-glass-location"></i>Finder
+                </h4>
+            </div>
+            <nav class="menu">
+                <div class="head">
+                    <div class="logo">
+                        <h4 style="color:black; font-weight: bolder;font-size: 30px;">Browse Finder</h4>
+                    </div>
+                    <button type="button" class="close-menu-btn"></button>
+                </div>
+                <ul>
+                    <li><a href="#" onclick="window.location.href='index.html'">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Pages</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#" onclick="window.location.href='about.html'"><span>About</span></a></li>
+                            <li><a href="#" onclick="window.location.href='splitScreen.html'"><span>Split
+                                        Screen</span></a></li>
+                            <li class="dropdown">
+                                <a href="#"><span>team</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-right">
+                                    <li><a href="#"><span>team 1</span></a></li>
+                                    <li><a href="#"><span>team 2</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><span>test</span></a></li>
+                            <li><a href="#"><span>pricing</span></a></li>
+                            <li class="dropdown">
+                                <a href="#"><span>elements</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-right">
+                                    <li><a href="#"><span>according</span></a></li>
+                                    <li><a href="#"><span>alert</span></a></li>
+                                    <li class="dropdown">
+                                        <a href="#"><span>cards</span></a>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <ul class="sub-menu sub-menu-right">
+
+                                            <li><a href="#"><span>basic</span></a></li>
+                                            <li><a href="#"><span>medium</span></a></li>
+                                            <li><a href="#"><span>large</span></a></li>
+                                            <li><a href="#"><span>extra large</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><span>carousel</span></a></li>
+                                    <li><a href="#"><span>table</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#">Portfolio</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#">web design</a></li>
+                            <li><a href="#">branding</a></li>
+                            <li><a href="#">graphic design</a></li>
+                            <li class="dropdown">
+                                <a href="#">photography</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-left">
+
+                                    <li><a href="#">nature</a></li>
+                                    <li><a href="#">urban</a></li>
+                                    <li><a href="#">architecture</a></li>
+                                    <li><a href="#">sports</a></li>
+                                    <li><a href="#">animals</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button type="button" class="search-btn icon-btn"><i class="fa-regular fa-sun"></i></button>
+                <button type="button" class="cart-btn icon-btn"><i class="fa-solid fa-user"></i></button>
+                <button type="button" class="open-menu-btn">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Header Section -->
+
+    <section class="about container">
+        <h1>ABOUT US</h1>
+        <!-- Main Content -->
+        <main>
+            <section class="video-section">
+                <h2>Easy way to find a perfect property with Finder</h2>
+                <!-- Video -->
+                <div class="video-container">
+                    <video autoplay muted>
+                        <source src="https://finder-html.createx.studio/assets/img/about/v1/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </main>
+    
+    </section>
+
+    <section class="values-section container">
+        <h2 class="section-title">The values we live by</h2>
+        <div class="values-container">
+          <!-- Advanced Property Search -->
+          <div class="value-item">
+            <img src="AboutImages/1.png" alt="Advanced Search Icon" class="value-icon">
+            <div class="value-content">
+              <h3>Advanced property search</h3>
+              <p>Enable users to filter properties by location, price range, property type, and other key criteria for a customized search experience.</p>
+            </div>
+          </div>
+          
+          <!-- User Reviews and Ratings -->
+          <div class="value-item">
+            <img src="AboutImages/2.png" alt="User Review Icon" class="value-icon">
+            <div class="value-content">
+              <h3>User reviews and ratings</h3>
+              <p>Allow users to leave reviews and ratings for properties and real estate agents, helping others make more informed choices based on previous experiences.</p>
+            </div>
+          </div>
+      
+          <!-- Interactive Map View -->
+          <div class="value-item">
+            <img src="AboutImages/3.png" alt="Interactive Map Icon" class="value-icon">
+            <div class="value-content">
+              <h3>Interactive map view</h3>
+              <p>Provide an interactive map that allows users to visually explore properties in their desired areas and view important local amenities.</p>
+            </div>
+          </div>
+      
+          <!-- Detailed Property Listings -->
+          <div class="value-item">
+            <img src="AboutImages/4.png" alt="Property Listing Icon" class="value-icon">
+            <div class="value-content">
+              <h3>Detailed property listings</h3>
+              <p>Include comprehensive property details, high-quality photos, and floor plans, ensuring users have all the information they need to make informed decisions.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+
+    <section class="steps-section container">
+        <div class="steps-container">
+          <div class="steps-image">
+            <img src="AboutImages/people.png" alt="People outside house">
+          </div>
+          <div class="steps-content">
+            <h2>Get new customers with Finder easily!</h2>
+            <ol class="steps-list">
+              <li>
+                <strong>1. Create your account</strong>
+                <p>Sign up quickly with your email or social media account. Add your company logo, contact information, and a brief bio to establish credibility. Get an intuitive dashboard to manage all your property listings and client interactions in one place.</p>
+              </li>
+              <li><strong>2. Add your property listings</strong></li>
+              <li><strong>3. Increase your visibility</strong></li>
+              <li><strong>4. Connect with potential clients</strong></li>
+            </ol>
+            <button class="cta-button">Create an account</button>
+            <span class="sep-meta">⏱ 5 min to complete</span>
+            
+          </div>
+        </div>
+      
+        <div class="trusted-companies">
+          <div class="logo-container">
+            <h3>Big companies trust Finder</h3>
+            <img src="AboutImages/11.png" alt="Company 1 Logo">
+            <img src="AboutImages/22.png" alt="Company 2 Logo">
+            <img src="AboutImages/33.png" alt="Company 3 Logo">
+            <img src="AboutImages/44.png" alt="Company 4 Logo">
+            <img src="AboutImages/55.png" alt="Company 5 Logo">
+          </div>
+        </div>
+    </section>
+    
+
+    <section class="features-section container">
+        <div class="feature-container">
+          <!-- First Feature -->
+          <div class="feature-card">
+            <img src="AboutImages/home.png" alt="Modern house exterior" class="feature-image">
+            <div class="feature-content">
+              <h3>Connect with potential clients</h3>
+              <p>Respond promptly to inquiries and schedule viewings to turn leads into satisfied customers.</p>
+              <button class="watch-video-button">▶ Watch video</button>
+            </div>
+          </div>
+          <!-- Second Feature -->
+          <div class="feature-card">
+            <img src="AboutImages/man.png" alt="Monitoring engagement" class="feature-image">
+            <div class="feature-content">
+              <h3>Monitor engagement</h3>
+              <p>Track and inquiries to see which properties attract the most interest.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
