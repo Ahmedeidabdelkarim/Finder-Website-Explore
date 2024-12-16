@@ -12,7 +12,7 @@ const closeMenuBtn=document.querySelector(".close-menu-btn");
 console.log(menu);
 
 
-menu.addEventListener("transitioned",()=>{
+menu.addEventListener("transitioned",function(){
     this.removeAttribute("style");
 })
 
