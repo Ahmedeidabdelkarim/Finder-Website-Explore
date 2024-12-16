@@ -697,6 +697,15 @@ body {
       .subscribe-section{
         flex-direction: column;
       }
+
+      .subscribe-section p{
+        margin-bottom: 20px;
+      }
+
+      .subscribe-section button {
+        margin-bottom: 20px;
+      }
+  
   }
 
 
